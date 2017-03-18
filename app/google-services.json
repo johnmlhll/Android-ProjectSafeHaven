@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "247541762961",
+    "firebase_url": "https://project-safehaven.firebaseio.com",
+    "project_id": "project-safehaven",
+    "storage_bucket": "project-safehaven.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247541762961:android:b57568b2ac721656",
+        "android_client_info": {
+          "package_name": "com.dbs.jmulhall.projectsafehavenapi25"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247541762961-o2hcnc1jhan1jrqqi8ku4om3ms7996rh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIflD9ql4SwUEbDRaYDHZgM5Ne9zqiJhc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

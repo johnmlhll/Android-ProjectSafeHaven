@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dbs.jmulhall.projectsafehavenapi25.NewRegistration">
+
+    <TextView
+        android:text="New Registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblNewRegistration"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/txtGivenName"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/txtFirstName"
+        android:hint="Input First Name" />
+
+    <TextView
+        android:text="Last Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblLastName"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/txtFirstName"
+        android:layout_alignStart="@+id/lblFirstName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/txtFirstName"
+        android:layout_alignStart="@+id/txtFirstName"
+        android:id="@+id/txtLastName"
+        android:hint="Input Last Name" />
+
+    <TextView
+        android:text="Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:id="@+id/lblGender"
+        android:layout_below="@+id/txtLastName"
+        android:layout_alignStart="@+id/lblLastName"
+        android:textStyle="normal|bold"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:text="Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdoDiscloseOK"
+        android:textStyle="normal|bold"
+        android:layout_alignBottom="@+id/lblGender"
+        android:layout_alignStart="@+id/txtLastName" />
+
+    <TextView
+        android:text="Date of Birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblGender"
+        android:layout_alignStart="@+id/lblGender"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lblDateOfBirth"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_below="@+id/rdoDiscloseOK"
+        android:layout_alignStart="@+id/rdoDiscloseOK"
+        android:layout_marginTop="6dp"
+        android:id="@+id/txtDateOfBirth"
+        android:hint="dd/mm/yyyy" />
+
+    <TextView
+        android:text="Citizenship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDateOfBirth"
+        android:layout_alignStart="@+id/lblDateOfBirth"
+        android:layout_marginTop="11dp"
+        android:id="@+id/lblCitizenship"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDateOfBirth"
+        android:layout_alignStart="@+id/txtDateOfBirth"
+        android:id="@+id/txtCitizenship" />
+
+    <TextView
+        android:text="Address Line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/lblAddressLine1"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtCitizenship"
+        android:layout_alignStart="@+id/lblCitizenship" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:layout_below="@+id/txtCitizenship"
+        android:layout_alignStart="@+id/txtCitizenship"
+        android:id="@+id/txtAddressLine1"
+        android:hint="Street Address" />
+
+    <TextView
+        android:text="Town/Area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lblTownArea"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/txtAddressLine1"
+        android:layout_alignStart="@+id/lblAddressLine1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/txtTownArea"
+        android:layout_below="@+id/txtAddressLine1"
+        android:layout_alignParentEnd="true"
+        android:hint="Area/Village Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/txtCity"
+        android:layout_below="@+id/txtTownArea"
+        android:layout_alignParentEnd="true"
+        android:hint="Nearest City" />
+
+    <TextView
+        android:text="City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblCity"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/txtCity"
+        android:layout_alignBottom="@+id/txtCity"
+        android:layout_alignStart="@+id/lblTownArea" />
+
+    <TextView
+        android:text="Post Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCity"
+        android:layout_alignStart="@+id/lblCity"
+        android:layout_marginTop="8dp"
+        android:id="@+id/lblPostCode"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPostCode"
+        android:layout_alignStart="@+id/lblPostCode"
+        android:layout_marginTop="23dp"
+        android:id="@+id/lblCountry"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:layout_below="@+id/txtPostCode"
+        android:layout_alignStart="@+id/txtPostCode"
+        android:id="@+id/txtCountry"
+        android:hint="Country Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/txtPostCode"
+        android:layout_below="@+id/txtCity"
+        android:layout_alignParentEnd="true"
+        android:hint="Postcode if available" />
+
+    <Button
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNext"
+        android:textStyle="normal|bold"
+        android:onClick="toNewRegistrationPhoto"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCheckAddress"
+        android:textStyle="normal|bold"
+        android:onClick="checkAddress"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/lblCountry" />
+
+    <TextView
+        android:text="First Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblFirstName"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_alignBaseline="@+id/txtFirstName"
+        android:layout_alignBottom="@+id/txtFirstName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtGivenName"
+        android:layout_alignBaseline="@+id/lblGivenName"
+        android:layout_alignBottom="@+id/lblGivenName"
+        android:layout_alignParentEnd="true"
+        android:hint="Input Given/Nick Name" />
+
+    <TextView
+        android:text="Given Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblGivenName"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/lblNewRegistration"
+        android:layout_alignStart="@+id/lblFirstName" />
+
+    <Button
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHome"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:onClick="goToHomeFromNewReg"
+        android:layout_weight="0.02"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btnCheckAddress" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnHome"
+        android:layout_toEndOf="@+id/btnHome"
+        android:id="@+id/btnSaveNewRegP1"
+        android:onClick="savePersonalDetails"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtGender"
+        android:hint="M/F"
+        android:textColor="?android:attr/actionMenuTextColor"
+        android:layout_below="@+id/txtLastName"
+        android:layout_alignStart="@+id/btnNext" />
+
+</RelativeLayout>
