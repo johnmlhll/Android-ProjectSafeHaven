@@ -7,4 +7,4 @@ API 25 Android Studio 2.3.3 and Subscription Account with Google Developer (Fire
 Make sure you have an Android environment for this as above or Nouget on your Android device. |
 How to run tests Deployment instructions
 Who do I talk to?
-John Mulhall at johnmlhll@yahoo.com or on Twitter @johnmlhll
+If you would like formal documentation on this project (available for my other projects in dedicated repos), please let me know by reaching out at johnmhll@yahoo.com. Also, please note that if you are in the software industry and follow me on Twitter @johnmlhll, I will follow you back when I see your follow.
